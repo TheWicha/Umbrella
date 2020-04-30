@@ -3,6 +3,7 @@ const app = express();
 const { Client } = require("pg");
 require("dotenv").config();
 
+app.use(express.static("public"))
 app.use(function(req, res, next) {
   res.header("Access-Control-Allow-Origin", "*");
   res.header(
@@ -108,7 +109,6 @@ app.post("/products", async (req, res) => {
   }
 });
 
-const port = process.env.port || 5000;
-const host = process.env.host || "127.0.0.1"
-app.listen(port, host, () => console.log(`Biegam na http://${host}:${port}`));
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => console.log(`Biegam na ${PORT}`));
 
