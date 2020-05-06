@@ -10,11 +10,11 @@ const Footer: React.FC = () => {
       display: "flex",
       padding: "2em 0",
     },
-    row:{
-      display: 'flex',
+    row: {
+      display: "flex",
       width: "100%",
-      justifyContent: 'space-evenly',
-    }
+      justifyContent: "space-evenly",
+    },
   });
   const classes = useStyles();
 
