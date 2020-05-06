@@ -8,7 +8,7 @@ const Footer: React.FC = () => {
     root: {
       color: "white",
       display: "flex",
-      padding: "2em",
+      padding: "2em 0",
     },
     row:{
       display: 'flex',
