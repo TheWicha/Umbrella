@@ -15,7 +15,8 @@ const ProductSite: React.FC = (props: any) => {
   });
 
   useEffect(() => {
-    const databaseURL = `http://localhost:5000/product${props.match.url}`;
+    const PORT = process.env.PORT  || 5000
+    const databaseURL = `http://localhost:${PORT}/product${props.match.url}`;
 
     const callBackendApi = async () => {
       const response = await fetch(databaseURL);
