@@ -5,7 +5,6 @@ import { useSelector } from "react-redux";
 import "typeface-roboto";
 import img from "../images/passion.jpg";
 import img2 from "../images/doge.jpg";
-import UmbrellaLogo from "./UmbrellaLogo";
 
 const About: React.FC = () => {
   const theme = useSelector((theme: any) => theme.getTheme);
@@ -19,13 +18,15 @@ const About: React.FC = () => {
       backgroundColor: theme.secondary,
     },
     text: {
-      opacity: "0.9",
+      border: '1px solid white',
+      opacity: "0.7",
       fontFamily: "Akzidenz Grotesk BQ Light,Helvetica,Arial",
       fontSize: "15px",
       color: "white",
       padding: "3em",
     },
     img: {
+      border: '1px solid white',
       opacity: "0.9",
       width: "50%",
     },
@@ -50,7 +51,6 @@ const About: React.FC = () => {
         </Typography>
       </Container>
       <Typography className={classes.logo}>
-        <UmbrellaLogo />
       </Typography>
       <Container maxWidth="md" className={classes.container}>
         <img
