@@ -13,12 +13,15 @@ import { makeStyles } from "@material-ui/core/styles";
 const StackBox: React.FC = () => {
   const useStyles = makeStyles({
     flex: {
+      backgroundColor: '#fafbfc',
       display: "flex",
       flexDirection: "column",
-      maxWidth: '300px',
+      maxWidth: '400px',
       height: '250px',
+      padding: '3.2em',
       alignItems: "center",
       justifyContent:'center',
+      margin:'12px 24px',
       textAlign: 'center',
       '&:hover': {
         boxShadow: '7px 7px 5px 0px rgba(0,0,0,0.07)',
@@ -117,5 +120,3 @@ const StackBox: React.FC = () => {
 };
 
 export default StackBox;
-
-// VSC
