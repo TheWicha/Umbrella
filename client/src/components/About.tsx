@@ -83,14 +83,14 @@ const About: React.FC = () => {
       </Container>
       <Typography style={{ fontSize: "0.5em", alignSelf: "start" }}>
         Images are from{" "}
-        <a href="https://www.unsplash.com" target="_blank">
+        <a href="https://www.unsplash.com" target="_blank" rel="noopener noreferrer">
           unsplash.com
         </a>
         <br />
-        <a href="https://unsplash.com/photos/TamMbr4okv4" target="_blank">
+        <a href="https://unsplash.com/photos/TamMbr4okv4"  rel="noopener noreferrer" target="_blank">
           Photo 1
         </a>
-        <a href="https://unsplash.com/photos/f81ym3dE5N4" target="_blank">
+        <a href="https://unsplash.com/photos/f81ym3dE5N4"  rel="noopener noreferrer" target="_blank">
           Photo 2
         </a>
       </Typography>
